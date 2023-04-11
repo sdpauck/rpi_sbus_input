@@ -12,7 +12,7 @@ class SbusThread(object):
        
         # FPS = 1/X
         # X = desired FPS
-        self.FPS = 1/30
+        self.FPS = 1/1
         self.FPS_MS = int(self.FPS * 1000)
         
         # Start frame retrieval thread
@@ -23,6 +23,7 @@ class SbusThread(object):
     def update(self):
         while True:
             if not self.reader.is_connected():
+                time.sleep(2)
                 continue
             try:
                 self.is_connected = self.reader.is_connected()
