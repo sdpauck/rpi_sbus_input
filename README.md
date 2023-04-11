@@ -1,7 +1,7 @@
 # READING SBUS ON RPI WITH PIGPIO LIB
 
 ## Features
-- Python lib include software inverter:
+- Python lib (https://github.com/VermontCoder/read_sbus) include software inverter:
 ```
        Data Packet:
            11000010 100
